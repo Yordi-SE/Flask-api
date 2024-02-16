@@ -3,7 +3,7 @@ from DBstorage import storage
 app = Flask(__name__)
 @app.route("/create", METHOD=["POST"])
 def create():
-    storage.new(form.data.name)
+    storage.new(form.data.task)
 @app.route("/update",METHOD=["PUT"])
 def update():
     #update task
